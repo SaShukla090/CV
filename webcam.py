@@ -5,7 +5,7 @@ cap = cv2.VideoCapture(0)
 while True:
 	ret, frame = cap.read()
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-	face_cascade = cv2.CascadeClassifier("haarcascades\haarcascade_mcs_upperbody.xml")
+	face_cascade = cv2.CascadeClassifier("haarcascades\haarcascade_frontalface_alt.xml.xml")
 	
 	faces = face_cascade.detectMultiScale(gray, 1.1, 2)
 	
